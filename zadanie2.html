@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie2</title>
+
+    <script language="JavaScript" type="text/javascript">
+        function WinOpen_graf_1() {
+            window.open("grafika1.html","okienko1","toolbar=no,directories=no,menubar=no,height=240,width=135,top=500,left=200");
+        }
+        function WinOpen_graf_2() {
+            window.open("grafika2.html","okienko2","toolbar=no,directories=no,menubar=no,height=240,width=135,top=400,left=350");
+        }
+        function WinOpen_graf_3() {
+            window.open("grafika3.html","okienko3","toolbar=no,directories=no,menubar=no,height=240,width=135,top=300,left=500");
+        }
+        function WinOpen_graf_4() {
+            window.open("grafika4.html","okienko4","toolbar=no,directories=no,menubar=no,height=240,width=135,top=200,left=650");
+        }
+        function WinClose_burdon() {
+            window.close()
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" name="przycisk" value="grafika1" onclick="WinOpen_graf_1(' ')">
+    <input type="button" name="przycisk" value="grafika2" onclick="WinOpen_graf_2(' ')">
+    <input type="button" name="przycisk" value="grafika3" onclick="WinOpen_graf_3(' ')">
+    <input type="button" name="przycisk" value="grafika4" onclick="WinOpen_graf_4(' ')"> <br><br>
+    <input type="button" value="zamknij okno" onclick="WinClose_burdon()"/>
+
+    
+</body>
+</html>

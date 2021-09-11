@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function okno_zamknij_burdon()
+            {
+                window.close()
+            }
+        function WinOpen()
+        {
+            window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        }
+        </script>
+    </head>
+    <body>
+        <textarea rows="15" cols="100">
+        ……………………………wytłumaczenie……………………………………………………………………………….
+        window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        Jest to guzik, który powoduje otwarcie nowej strony
+        ……………………………wytłumaczenie……………………………………………………………………………….
+        toolbar=no, jeźeli opcja ta ustawiona jest na no, wtedy nie posiada on widocznego paska nawigacji 
+        directories=no, nie tworzy katalogów
+        menubar=no, -> nie widoczny pasek menu
+        height=280, -> wysokość 
+        width=160, -> szerokość 
+        top=200, -> odsunięcie od góry
+        left=200, -> odsunięcie od lewej strony
+        window.close() -> zamknięcie okno
+        ……………………………wytłumaczenie……………………………………………………………………………….
+        </textarea>
+                <input type="button" value="zamknij okno" onclick="okno_zamknij_burdon()"/>
+            </body>
+        </html>
