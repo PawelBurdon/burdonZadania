@@ -1,0 +1,24 @@
+<html>
+<body>
+<div style="color:green;font-size:35px;">
+<script language="JavaScript">
+	var liczba1=prompt("liczba1=","");
+	var liczba2=prompt("liczba2=","");
+	
+	var a1_burd = parseFloat(liczba1);
+	var a2_burd = parseFloat(liczba2);
+	
+	var x1 = parseFloat(3*Math.pow(a1_burd, (6/(6+2))));
+	var x2 = parseFloat(2*Math.cos(a1_burd * Math.PI / 180) + 2*Math.sin(a1_burd * Math.PI / 180));
+	var xa = Math.cbrt(Math.pow(a1_burd,5) + (2 * Math.pow(a2_burd,4)));
+	var xq = Math.abs(a1_burd - a2_burd)
+	var x3 = xa * xq;	
+	document.write(a1_burd + "<br>");
+	document.write(a2_burd + "<br>");
+	document.write(x1 + "<br>");
+	document.write(x2 + "<br>");
+	document.write(x3 + "<br>");
+</script>
+</div>
+</body>
+</html>
