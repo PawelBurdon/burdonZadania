@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Przykład pole i obwod prostokata</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie19</title>
     <script>
-        function pole_burd(a_burd, b_burd) {
-            a_dana_burd=parseFloat(a_burd);
-            b_dana_burd=parseFloat(b_burd);
-            Pole = a_dana_burd*b_dana_burd;
-            document.getElementsByName('pole')[0].value=Pole.toFixed(2);
-            alert("Pole="+Pole.toFixed(2)+" cm^2");
-            wprowadz_pole_burd.innerHTML="Pole="+Pole.toFixed(2)+" cm^2"+"<br>";
+        function V(a,b,c) {
+            a_liczba = parseFloat(a);
+            b_liczba = parseFloat(b);
+            c_liczba = parseFloat(c);
+            V_wynik = a_liczba * b_liczba * c_liczba;
+            // document.getElementsByName("obj")[0].value=V_wynik.toFixed(2);
+            alert("V="+V_wynik.toFixed(2)+" cm^3"); 
+            // pokaz1.innerHTML="V="+V_wynik.toFixed(2)+"<br>";
         }
-        function obwod_burd(a_burd, b_burd) {
-            a_dana_burd=parseFloat(a_burd);
-            b_dana_burd=parseFloat(b_burd);
-            Obwod=(a_dana_burd*2) + (b_dana_burd*2);
-            document.getElementsByName('obwod')[0].value=Obwod.toFixed(2);
-            alert("Obwod="+Obwod.toFixed(2)+" cm");
-            wprowadz_obwod_burd.innerHTML="Obwod="+Obwod.toFixed(2)+" cm"
+        function Pp(a,b) {
+            a_liczba = paraseFloat(a);
+            b_liczba = paraseFloat(b);
+            Pp_wynik = a_liczba * b_liczba;
+            // document.getElementsByName("pole")[0].value=Pc_wynik.toFixed(2);
+            alert("Pc="+Pp_wynik.toFixed(2)+" cm^2");
+            // pokaz2.innerHTML="Pc="+Pp_wynik.toFixed(2)+"cm^2";
+
         }
     </script>
 </head>
 <body>
-    Liczenie pola i obwodu prostokata
-    <br><br>
-    <form name="formularz" action="..." onsubmit="pole_burd(this.promien.value,this.wysokosc.value);
-    obwod_burd(this.promien.value,this.wysokosc.value); return false">
-    Podaj a=
-    <input size="6" name="promien">
-    Podaj b=
-    <input size="6" name="wysokosc">
-    <br><br>
-    <input type="submit" value="oblicz">
-    <br><br>
-    Pole=
-    <input size="6" name="pole">
-    Obwod=
-    <input size="6" name="obwod">
-    </form>
-    <table>
-        <tr id="wprowadz_pole_burd"></tr>
-        <tr id="wprowadz_obwod_burd"></tr>
-    </table>
-    
+    Pobliczanie V i Pc prosokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.bokA.value,this.bokB.value,this.bokC.value);
+Pc(this.bokA.value,this.bokB.value);return false">
+Podaj a=
+<input size="6" name="bokA">
+Podaj b=
+<input size="6" name="bokB">
+Podaj c=
+<input size="6" name="bokC">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<!-- <br>
+<br>
+V=
+<input size="6" name="obj">
+Pc=
+<input size="6" name="pole"> -->
+</form>
+<table>
+<!-- <tr id="pokaz1"></tr> -->
+<!-- <tr id="pokaz2"></tr> -->
+</table>
 </body>
 </html>
