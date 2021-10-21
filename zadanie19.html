@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Przykład pole i obwod prostokata</title>
+
+    <script>
+        function pole_burd(a_burd, b_burd) {
+            a_dana_burd=parseFloat(a_burd);
+            b_dana_burd=parseFloat(b_burd);
+            Pole = a_dana_burd*b_dana_burd;
+            document.getElementsByName('pole')[0].value=Pole.toFixed(2);
+            alert("Pole="+Pole.toFixed(2)+" cm^2");
+            wprowadz_pole_burd.innerHTML="Pole="+Pole.toFixed(2)+" cm^2"+"<br>";
+        }
+        function obwod_burd(a_burd, b_burd) {
+            a_dana_burd=parseFloat(a_burd);
+            b_dana_burd=parseFloat(b_burd);
+            Obwod=(a_dana_burd*2) + (b_dana_burd*2);
+            document.getElementsByName('obwod')[0].value=Obwod.toFixed(2);
+            alert("Obwod="+Obwod.toFixed(2)+" cm");
+            wprowadz_obwod_burd.innerHTML="Obwod="+Obwod.toFixed(2)+" cm"
+        }
+    </script>
+</head>
+<body>
+    Liczenie pola i obwodu prostokata
+    <br><br>
+    <form name="formularz" action="..." onsubmit="pole_burd(this.promien.value,this.wysokosc.value);
+    obwod_burd(this.promien.value,this.wysokosc.value); return false">
+    Podaj a=
+    <input size="6" name="promien">
+    Podaj b=
+    <input size="6" name="wysokosc">
+    <br><br>
+    <input type="submit" value="oblicz">
+    <br><br>
+    Pole=
+    <input size="6" name="pole">
+    Obwod=
+    <input size="6" name="obwod">
+    </form>
+    <table>
+        <tr id="wprowadz_pole_burd"></tr>
+        <tr id="wprowadz_obwod_burd"></tr>
+    </table>
+    
+</body>
+</html>
